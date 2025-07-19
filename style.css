@@ -1,0 +1,498 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+*,
+*:after,
+*:before{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(189, 15, 102) !important;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+}
+/* Variable Defin */
+:root{
+    --primary-color:rgb(0, 35, 78);
+
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    margin-bottom: 10px;
+}
+/* ...............Custom CSS...................... */
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: rgb(0, 35, 78);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    margin-bottom: 3rem;
+    color: rgb(0, 35, 78);
+    line-height: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    margin-bottom: 3rem;
+    color: rgb(0, 35, 78);
+    line-height: 3rem;
+}
+p{
+    font-size: 1.075rem;
+    color: rgb(0, 35, 78);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+    
+
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: rgb(0, 35, 78);
+    border: 0.1875 rem solid;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 78);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover{
+    background-color: hotpink;
+
+}
+
+.white-btn{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: rgb(247, 245, 249);
+    border: 0.1875 rem solid;
+    color: rgb(0, 35, 78);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px whitesmoke;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+
+
+/* 
+    padding: 0.625rem 1.875re;
+    line-height: 25px;
+    background-color: white;
+    border: 0.1875re solid black;
+    color: black;
+    font-size: 0.9375re;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px pink;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s; */
+}
+.white-btn:hover{
+    background-color: hotpink;
+
+}
+
+.navigation-wrap{
+    position: fixed;
+    background-color:rgb(0, 35, 78);
+    width:  100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 0.65rem;
+    transition: all 200ms linear;
+
+}
+/* ...............toggler..................... */
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:aliceblue;
+    letter-spacing: 1px;
+
+
+}
+
+/* .......change navbar style on scroll............ */
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(7, 84, 119);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(7, 84, 119);
+    transition: all .15rem ease-in-out 0s;
+}
+/* .....top-banner design............. */
+
+.top-banner{
+    width: 100%;
+    background-color: #F7E7CE;
+    padding: 12.875rem 0 8.375rem;
+
+
+    
+}
+  
+
+.team{
+    height: 110%;
+    width: 90%;
+    animation: upDown 3s ease-in-out infinite;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px rgb(102, 102, 102);
+    position: relative;
+}
+ @keyframes upDown {
+      0% { top: 0px; }
+      50% { top: -20px; } /* Move Up */
+      100% { top: 0px; }  /* Back to Original */
+    }
+
+/* #ShortNav{
+    color: rgb(240, 255, 241);
+} */
+
+/* ........................Our Services........................... */
+
+.cardFirst{
+    width: 19rem;
+    height: 23rem;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 5px 5px 5px 5px  rgb(128, 123, 123);
+    
+}
+.startbutton{
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.0625rem;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(0, 35, 78);
+    border: 0.1875 rem solid;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(237, 233, 24);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.startbutton:hover{
+    background-color: hotpink;
+
+}
+
+.learn{
+    color:rgb(0, 0, 78) ;
+    font-weight: bold;
+}
+
+.digital{
+    width: 38rem;
+    height:30rem;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 2px 10px -1px rgb(0, 35, 78);
+}
+.digital:hover{
+    transform: translateY(-2rem);
+    transition:all 0.5s ease;
+}
+.AboutPar{
+    font-size: large;
+    text-align: justify;
+}
+.card:hover{
+    transform: translateY(-2rem);
+    transition: all 0.9s ease;
+}
+
+
+.CarouselFirst{
+    height: 250px;
+    width:800px;
+    border: 2px solid;
+    text-align: center;
+    font-style: italic;
+    color: rgb(56, 56, 56);
+
+}
+.imgFirst{
+    height: 50px;
+    width: 50;
+    border-radius: 50%;
+    text-align: center;
+}
+#message{
+    width: 610px;
+    height: 150px;
+}
+.btnFirst{
+    width: 610px;
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.0625rem;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(0, 35, 78);
+    border: 0.1875 rem solid;
+    color: white;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(237, 233, 24);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.btnFisrt:hover{
+    color: hotpink;
+}
+.FormFirst{
+    background-color: white;
+    width: 650px;
+    height: 550px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px rgb(128, 123, 123);
+    padding: 4rem 0 2rem;
+    margin-left: 10px;
+}
+.form-control{
+    width: 610px;
+}
+.formSet
+{
+    margin-left: 20px;
+}
+.IconRow{
+    font-weight: 900px;
+    font-size: 35px;
+    color: rgb(0, 35, 78);
+    
+
+}
+.IconRow:hover{
+    color:hotpink;
+}
+.Span{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 35, 78);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer{
+    background-color: rgb(0, 35, 78);
+    
+}
+.prg{
+    color: aliceblue;
+}
+.sectionfluid{
+    background-color: rgb(0, 35, 78);
+}
+
+body{
+    background-color: #FFF3F3;
+}
+img.favicon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; /* Makes it circular */
+}
+
+.icon{
+    font-size: 150%;
+    color: rgb(0, 35, 78);
+    margin-left: 3%;
+    background: rgb(68, 58, 253);
+    border-radius:50%;
+    margin-top:0.725rem;
+padding:0.725rem;
+}
+.icon:hover{
+    color: hotpink;
+    
+}
+
+.cardSecond{
+    width:26rem;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px 5px  rgb(128, 123, 123);
+}
+/* .whatsapp-icon{
+    position: fixed;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+} */
+.SectionSixth{
+    background-color: #F7E7CE;
+    padding: 2.875rem 0 2.375rem;
+}
+
+.sectionSeventh{
+    color: aliceblue;
+}
+
+/* .Sicon{
+    margin-right: 2%;
+    font-size: 150%;
+    color: rgb(60, 118, 253);
+} */
+.Sicon:hover{
+    color:hotpink
+} 
+ #testimonial{
+    text-align: center;
+} 
+ .txt{
+    float: left;
+ }
+ .sectionFifth{
+    padding: 7.875rem 0 3.375rem;
+ }
+ .SpanFirst{
+    font-family: "Gill Sans", sans-serif;
+    color: aliceblue;
+    font-size:150%;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top:20px;
+ }
+ 
+ .Sicon{
+    margin-top:1rem;
+    background: #fff;
+    border-radius:1rem;
+    padding:1rem;
+    font-size: 150%;
+    color: rgb(0, 35, 78);
+}
+.Sicon:hover{
+    transform:rotate(360deg);
+    transition:1s ease;
+}
+
+
+#container {
+      width: 60%;
+      height: 280px;
+      position: relative;
+      margin: 50px auto;
+      font-size: 24px;
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
+    }
+
+    .item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .active {
+      opacity: 1;
+    }
+    .imgtest{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        
+        
+    }
+    .spantest{
+        font-size: 80%;
+        color: gray;
+
+    }
+
+
+    footer {
+      
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    footer::before {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 1px;
+      background-color: #ccc;
+      margin-left: 150px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .footer-content {
+      font-size: 18px;
+      color: #b9b6b6;
+    }
